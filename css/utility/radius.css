@@ -1,0 +1,32 @@
+:root{
+--radius-5: 5px;
+--radius-10: 10px;
+--radius-15: 15px;
+--radius-20: 20px;
+--radius-25: 25px;
+--radius-30: 30px;
+}
+
+.radius-5{
+border-radius: var(--radius-5);
+}
+
+.radius-10{
+border-radius: var(--radius-10);
+}
+
+.radius-15{
+border-radius: var(--radius-15);
+}
+
+.radius-20{
+border-radius: var(--radius-20);
+}
+
+.radius-25{
+border-radius: var(--radius-25);
+}
+
+.radius-30{
+border-radius: var(--radius-30);
+}

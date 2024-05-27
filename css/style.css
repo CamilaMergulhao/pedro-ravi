@@ -1,0 +1,54 @@
+/*Global*/
+@import "global/global.css";
+@import "global/header.css";
+@import "global/footer.css";
+
+/*Utilidades*/
+@import "utility/components.css";
+@import "utility/typography.css";
+@import "utility/colors.css";
+@import "utility/radius.css";
+
+/*home*/
+@import "home/intro.css";
+@import "home/training.css";
+@import "home/place.css";
+@import "home/plans";
+@import "home/reviews.css";
+@import "home/telegram.css";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

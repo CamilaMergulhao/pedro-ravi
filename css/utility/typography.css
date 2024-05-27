@@ -1,0 +1,63 @@
+:root{
+
+--caps: uppercase;
+
+--font-14: 400 0.875rem/1.25  "Inter", sans-serif;
+--font-16: 400 1rem/1.25  "Inter", sans-serif;
+--font-18: 400 1.125rem/1.25  "Inter", sans-serif;
+--font-20: 500 1.25rem/1.25  "Inter", sans-serif;
+--font-22: 500 1.375rem/1.25  "Inter", sans-serif;
+
+--font-24: 400 1.5rem/1.25  'LT Eyesight', sans-serif;
+--font-28: 400 1.75rem/1.25  'LT Eyesight', sans-serif;
+--font-32: 400 2rem/1.25  'LT Eyesight', sans-serif;
+--font-40: 700 2.5rem/1.25  'LT Eyesight', sans-serif;
+--font-48: 700 3rem/1.25  'LT Eyesight', sans-serif;
+}
+
+.caps{
+text-transform: var(--caps);
+}
+
+.text-14{
+font: var(--font-14)
+};
+
+.text-16{
+font: var(--font-16)
+} 
+
+.text-18{
+font: var(--font-18)
+} 
+
+.text-20{
+font: var(--font-20)
+} 
+
+.text-22{
+font: var(--font-22)
+} 
+
+.text-24{
+font: var(--font-24)
+}
+
+.text-28{
+font: var(--font-28)
+}
+
+.text-32{
+font: var(--font-32)
+}
+
+.text-40{
+font: var(--font-40);
+}
+
+.text-48{
+font: var(--font-48)
+}
+
+
+
