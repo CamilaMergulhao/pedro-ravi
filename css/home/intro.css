@@ -1,0 +1,35 @@
+.intro{
+position: relative;
+padding: 80px 0px;
+z-index: 1;
+}
+
+
+.intro-text {
+max-width: 500px;
+}
+
+.intro-text-title{
+margin-bottom: 20px;
+}
+
+.intro-title{
+margin-bottom: 8px;
+}
+
+/* .intro-text{
+background-color: blanchedalmond;
+} */
+
+
+
+.intro-text-social{
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.intro-text-social img{
+height: 20px;
+width: auto;
+}

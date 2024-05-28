@@ -1,0 +1,46 @@
+.ctn-header-intro {
+background-image: url("../../img/bg-one.jpg");
+background-repeat: no-repeat;
+background-size: cover; 
+height: 500px;
+width: 100%;
+position: relative;
+}
+
+.ctn-header-intro::before {
+content: ""; 
+position: absolute; 
+top: 0;
+left: 0;
+width: 100%;
+height: 500px;
+background-color: rgba(0, 0, 0, 0.5); 
+z-index: 1; 
+}
+
+.header{
+position: relative;
+padding: 15px 0px;
+z-index: 1;
+background-color: #000000a8;
+}
+
+.header-nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo-header{
+width: 180px;
+height: auto;
+}
+
+.header-menu{
+display: flex;
+gap: 15px;
+font: var(--font-14);
+letter-spacing: 1px;
+color: var(--color-0);
+text-transform: uppercase;
+}

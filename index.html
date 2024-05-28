@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pedro Ravi | Trail Running</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/lt-eyesight" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
 
@@ -11,28 +21,32 @@
    <header class="header">
         <nav class="header-nav container">
             <a href="index.html" aria-label="Logo Pedro Ravi">
-                <img src="brand/logo-header.svg" alt="Logo Pedro Ravi">
+                <img src="brand/logo-header.svg" class="logo-header" alt="Logo Pedro Ravi">
             </a>
-            <button class="btn-mobile" aria-label="Abrir Menu"></button>
+            <!-- <button class="btn-mobile" aria-label="Abrir Menu"></button> -->
 
             <ul class="header-menu">
-                <li><a>>Sobre</a</li>
-                <li><a>Treinos</a></li>
-                <li><a>Planos</a></li>
-                <li><a>>Contato</a</li>
-                <li><a>Área do aluno</a></li>
+                <li><a href="#">Sobre</a</li>
+                <li><a href="#">Treinos</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Contato</a</li>
+                <li><a href="#" id="btn-login">Área do aluno</a></li>
             </ul>
-        </nav>
-
+        </nav>  
    </header>
 
 <section class="intro-bg">
     <div class="intro container">
-        <div class="intro-text">
+        <div class="intro-text color-0">
             <div class="intro-text-title">
-                <span>Trail Running</span>
-                <h1>Pedro Ravi</h1>
-                <p>Ultra Runner de 40 anos, pai e homem de família. Comecei a correr para perder peso após ter chegado aos 92kg quando deixei de praticar Futebol. Desde então tenho participado em inúmeras provas com mais de 3 dígitos, o gosto pela natureza e pela corrida é algo que nunca irei prescindir na minha vida e por gostar tanto, tento transmitir a mesma paixão a todos os atletas com que me cruzo.</p>
+                <div class="intro-title">
+                    <span class="text-14 color-brand caps">Trail Running</span>
+                    <h1 class="text-48 caps">Pedro Ravi</h1>
+                </div>
+
+                <div class="intro-text">
+                    <p class="text-16 color-0">Ultra Runner de 40 anos, pai e homem de família. Comecei a correr para perder peso após ter chegado aos 92kg quando deixei de praticar Futebol. Desde então tenho participado em inúmeras provas com mais de 3 dígitos, o gosto pela natureza e pela corrida é algo que nunca irei prescindir na minha vida e por gostar tanto, tento transmitir a mesma paixão a todos os atletas com que me cruzo.</p>
+                </div>
             </div>
 
             <ul class="intro-text-social">
@@ -51,51 +65,52 @@
         <section class="training-bg">
             <div class="training container">
                 <div class="training-title">
-                <h2>Treine pesado, mas de forma inteligente</h2>
+                <h2 class="title-40">Treine pesado, mas de forma inteligente</h2>
                     
                 <div class="training-title-text">
-                    <p>Ultra Runner de 40 anos, pai e homem de família. Comecei a correr para perder peso após ter chegado aos 92kg quando deixei de praticar Futebol. Desde então tenho participado em inúmeras provas com mais de 3 dígitos, o gosto pela natureza </p>
+                    <p class="text-16 color-0">Ultra Runner de 40 anos, pai e homem de família. Comecei a correr para perder peso após ter chegado aos 92kg quando deixei de praticar Futebol. Desde então tenho participado em inúmeras provas com mais de 3 dígitos, o gosto pela natureza </p>
                     
                 </div>
             </div>
 
             <div class="training-ctn">
-                <div class="training-box">
-                    <div class="training-icon">
-                        <img src="icons/levels-icon.png" alt="">
+                
+                    <div class="training-box">
+                        <div class="training-icon">
+                            <img src="icons/obstacles-icon.png" alt="">
+                        </div>
+                
+                        <div class="training-text">
+                            <h3 class="text-20 color-0">Provas de obstáculos e aventura </h3>
+                            <p class="text-16 color-0">Programa de treino individualizado para atletas de competição em provas de obstáculos</p>
+                        </div>
                     </div>
 
-                    <div class="training-text">
-                        <h3>Para atletas de todos os niveis</h3>
-                        <p>Acompanhamos atletas iniciantes, experientes, amadores ou profissionais que pratiquem ou que queiram iniciar a prática de Trail Running</p>
+                    <div class="training-box">
+                        <div class="training-icon">
+                            <img src="icons/levels-icon.png" alt="">
+                        </div>
+                
+                        <div class="training-text">
+                            <h3 class="text-20 color-0">Para atletas de todos os níveis </h3>
+                            <p class="text-16 color-0">Acompanhamos atletas iniciantes, experientes, amadores ou profissionais que pratiquem ou que queiram iniciar a prática de Trail Running</p>
+                        </div>
                     </div>
 
-                </div>
-
-                <div class="training-box">
-                    <div class="training-icon">
-                        <img src="icons/distance-icon.png" alt="">
+                    <div class="training-box">
+                        <div class="training-icon">
+                            <img src="icons/distance-icon.png" alt="">
+                        </div>
+                
+                        <div class="training-text">
+                            <h3 class="text-20 color-0">Para todas as distâncias </h3>
+                            <p class="text-16 color-0">Desde 1km a 100 milhas ou provas de etapas, acompanhamos atletas que queiram pequenas o</p>
+                        </div>
                     </div>
 
-                    <div class="training-text">
-                        <h3>Para todas as distâncias</h3>
-                        <p>Desde 1km a 100 milhas ou provas de etapas, acompanhamos atletas que queiram pequenas o</p>
-                    </div>
-
-                </div>
-
-                <div class="training-box">
-                    <div class="training-icon">
-                        <img src="icons/obstacles-icon.png" alt="">
-                    </div>
-
-                    <div class="training-text">
-                        <h3>Provas de obstáculos e aventura</h3>
-                        <p>Programa de treino individualizado para atletas de competição em provas de obstáculos</p>
-                    </div>
-
-                </div>
-
+                   
+               
+                
 
             </div>
 

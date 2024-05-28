@@ -8,6 +8,7 @@
 @import "utility/typography.css";
 @import "utility/colors.css";
 @import "utility/radius.css";
+@import "utility/title.css";
 
 /*home*/
 @import "home/intro.css";
