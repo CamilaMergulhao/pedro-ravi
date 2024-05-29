@@ -1,9 +1,10 @@
 .training-bg{
 background-color: var(--gray-6);
+padding: 80px 0px
 }
 
 .training{
-padding: 80px 0px
+
 }
 
 /* title */

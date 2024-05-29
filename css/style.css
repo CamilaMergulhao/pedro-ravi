@@ -13,8 +13,8 @@
 /*home*/
 @import "home/intro.css";
 @import "home/training.css";
-@import "home/place.css";
-@import "home/plans";
+@import "home/places.css";
+@import "home/plans.css";
 @import "home/reviews.css";
 @import "home/telegram.css";
 

@@ -1,9 +1,11 @@
-.intro{
-position: relative;
+.intro-bg{
 padding: 80px 0px;
-z-index: 1;
 }
 
+.intro{
+position: relative;
+z-index: 1;
+}
 
 .intro-text {
 max-width: 500px;
