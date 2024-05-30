@@ -13,6 +13,14 @@ color: var(--color-brand);
 line-height: 1;
 }
 
+.title-28{
+font: var(--font-28);
+letter-spacing: 1px;
+text-transform: uppercase;
+color: var(--color-0);
+line-height: 1;
+}
+
 
 
 

@@ -1,0 +1,29 @@
+.telegram-bg{
+background-color: var(--color-1);
+padding: 80px 0px;
+}
+
+.telegram{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* text */
+.telegram-text{
+max-width: 500px;
+
+}
+
+.telegram-text h2{
+margin-bottom: 10px;
+}
+
+.telegram-text p{
+margin-bottom: 10px;
+}
+
+/* img */
+.telegram-img{
+max-width: 350px;
+}
