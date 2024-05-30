@@ -1,0 +1,95 @@
+.reviews-bg{
+background-color: var(--gray-6);
+padding: 80px 0px;
+}
+
+
+
+/* reviews-ctn */
+#reviews-ctn{
+width: 100%;
+overflow: hidden;
+}
+
+
+/* reviews-box */
+#reviews-box{
+display: flex;
+justify-content: center;
+/* width: 3983px; */
+/* transform: translate3d(1040px, 0px, 0px);
+transition: all 0.3s ease 0s; */
+/* will-change: transform; */
+}
+
+.reviews-infos-ctn{
+margin: 30px;
+}
+
+.reviews-infos-infos{
+background-color: var(--color-1);
+border-radius: var(--radius-20);
+padding: 30px;
+
+}
+
+
+/* reviews-btn-controls */ 
+
+.reviews-btn-controls{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.btn-reviews-box{
+display: flex;
+height: 20px;
+width: auto;
+}
+
+.btn-reviews-box button{
+background-color: transparent;
+cursor: pointer;
+}
+
+.btn-reviews-box button img{
+width: 100%;
+height: 100%;
+}
+
+
+
+/* reviews-client */
+.reviews-client{
+display: flex;
+align-items: start;
+}
+
+/* photo */
+.reviews-client-photo{
+border-radius: 100%;
+display: block;
+overflow: hidden;
+}
+
+.reviews-client-photo img{
+width: 80px;
+}
+
+
+/* text */
+.reviews-text{
+margin-bottom: 30px;
+
+}
+
+/* name*/
+.reviews-client-name{
+margin-left: 15px;
+padding-top: 5px;
+}
+
+.reviews-client-name span{
+display: block;
+}
