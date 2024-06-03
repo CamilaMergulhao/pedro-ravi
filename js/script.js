@@ -4,4 +4,5 @@ const slide = new SlideUm('place-box', 'place-wrapper');
 
 
 slide.init();
-console.log(slide)
+
+slide.changeSlide(1)
