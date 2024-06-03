@@ -18,7 +18,7 @@ margin-bottom: 8px;
 
 
 /* place-ctn */
-#place-ctn{
+#place-wrapper{
 width: 100%;
 overflow: hidden;
 }
@@ -27,21 +27,23 @@ overflow: hidden;
 #place-box{
 display: flex;
 justify-content: center;
-width: 3983px;
+/* width: 3983px; */
+/* background-color: brown; */
+/* transform: translate3d(1040px, 0px, 0px); */
 transform: translate3d(1040px, 0px, 0px);
-transition: all 0.3s ease 0s;
+/* transition: all 0.3s ease 0s; */
 /* will-change: transform; */
 }
 
 /* place-imgs */
 
 .place-imgs-ctn{
-max-width: 750px;
+max-width: 800px;
 width: 90vw;
 text-align: center;
 flex-shrink: 0;
 color: var(--color-0);
-margin: 0.9375rem;
+margin: 0 20px
 /* transform: scale(0.8); */
 /* opacity: .5; */
 /* transition: .3s; */
