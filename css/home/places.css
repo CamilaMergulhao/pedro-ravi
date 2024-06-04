@@ -35,8 +35,24 @@ width: 80vw;
 text-align: center;
 flex-shrink: 0;
 color: var(--color-0);
-margin: 0 20px
+margin: 0 20px;
+opacity: .8;
+transform: scale(.8);
+transition: .4s;
+overflow: hidden;
+box-shadow: 0 2px 4px rgba(0, 0, 0,.4);
 }
+
+.place-imgs-ctn.active{
+opacity: 1;
+transform: scale(1);
+}
+
+
+.place-imgs-ctn:hover{
+will-change: transform;
+}
+
 
 .place-imgs{
 border-radius: var(--radius-20);
