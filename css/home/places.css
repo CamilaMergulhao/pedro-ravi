@@ -19,33 +19,23 @@ margin-bottom: 8px;
 
 /* place-ctn */
 #place-wrapper{
-/* width: 100%; */
 overflow: hidden;
-/* background-color: brown; */
 }
 
 /* place-box */
 #place-box{
 display: flex;
-/* justify-content: center; */
-/* width: 3983px; */
-/* background-color: brown; */
-/* transition: all 0.3s ease 0s; */
-/* will-change: transform; */
 }
 
 /* place-imgs */
 
 .place-imgs-ctn{
 max-width: 800px;
-width: 90vw;
+width: 80vw;
 text-align: center;
 flex-shrink: 0;
 color: var(--color-0);
 margin: 0 20px
-/* transform: scale(0.8); */
-/* opacity: .5; */
-/* transition: .3s; */
 }
 
 .place-imgs{
