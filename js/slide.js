@@ -1,4 +1,4 @@
-class SlideUm {
+export class SlideUm {
     constructor(slideId, wrapperId) {
         this.slide = document.getElementById(slideId);
         this.wrapper = document.getElementById(wrapperId);
@@ -141,7 +141,13 @@ class SlideUm {
         this.onStart = this.onStart.bind(this);
         this.onMove = this.onMove.bind(this);
         this.onEnd = this.onEnd.bind(this);
+
+        this.activePrevSlide = this.activePrevSlide.bind(this);
+        this.activeNextSlide = this.activeNextSlide.bind(this);
+
         this.onResize = this.onResize.bind(this);
+
+        
     }
 
 
@@ -151,8 +157,24 @@ class SlideUm {
         this.addSlideEvents();
         this.slideConfig();
         this.addResizeEvent();
+        this.changeSlide(0);
         return this;
     }
 }
 
-export default SlideUm;
+
+
+export class SlideNav extends SlideUm{
+
+    addArrow(prev,next){
+        this.prevElement = document.querySelector(prev);
+        this.nextElement = document.querySelector(next);
+        this.addArrowEvent();
+
+    }
+
+    addArrowEvent(){
+        this.prevElement.addEventListener('click', this.activePrevSlide);
+        this.nextElement.addEventListener('click', this.activeNextSlide);
+    }
+}

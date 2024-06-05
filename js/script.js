@@ -1,7 +1,8 @@
-import SlideUm from "./slide.js";
+import {SlideUm, SlideNav} from "./slide.js";
 
-const slide = new SlideUm('place-box', 'place-wrapper');
+const slide = new SlideNav('place-box', 'place-wrapper');
 
 
-slide.init(2);
-slide.activePrevSlide();
+slide.init();
+slide.addArrow('.prev', '.next');
+
