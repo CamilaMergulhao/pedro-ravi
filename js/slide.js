@@ -2,6 +2,8 @@ export class SlideUm {
     constructor(slideId, wrapperId) {
         this.slide = document.getElementById(slideId);
         this.wrapper = document.getElementById(wrapperId);
+        
+
         this.dist = { finalPosition: 0, startX: 0, movement: 0 };
         this.activeClass = 'active';
         this.changeEvent = new Event('changeEvent');
@@ -107,6 +109,8 @@ export class SlideUm {
         this.changeActiveClass();
     }
 
+
+
     changeActiveClass(){
         this.slideArray.forEach((item) => item.element.classList.remove(this.activeClass));
         this.slideArray[this.index.active].element.classList.add(this.activeClass);
@@ -116,6 +120,7 @@ export class SlideUm {
         if (this.index.prev !== undefined) {
             this.changeSlide(this.index.prev);
         }
+
     }
 
     activeNextSlide() {
@@ -146,8 +151,6 @@ export class SlideUm {
         this.activeNextSlide = this.activeNextSlide.bind(this);
 
         this.onResize = this.onResize.bind(this);
-
-        
     }
 
 
@@ -157,6 +160,8 @@ export class SlideUm {
         this.addSlideEvents();
         this.slideConfig();
         this.addResizeEvent();
+        
+        this.createControl() // new paginação
         this.changeSlide(0);
         return this;
     }
@@ -170,11 +175,48 @@ export class SlideNav extends SlideUm{
         this.prevElement = document.querySelector(prev);
         this.nextElement = document.querySelector(next);
         this.addArrowEvent();
-
     }
+
+
 
     addArrowEvent(){
         this.prevElement.addEventListener('click', this.activePrevSlide);
         this.nextElement.addEventListener('click', this.activeNextSlide);
     }
+
+
+
+
+
+
+    // new  paginação ----------------------------------------
+
+    createControl() {
+        const control = document.querySelector('.nav-slide-list');
+        control.innerHTML = ''; // Limpa a lista existente
+
+        this.slideArray.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.addEventListener('click', () => this.changeSlide(index));
+            control.appendChild(li);
+        });
+
+        this.controlItems = [...control.children]; // Guarda os itens do controle para manipulação
+        this.updateControlActiveClass(); // Atualiza a classe ativa inicialmente
+       
+    }
+
+    updateControlActiveClass() {
+        this.controlItems.forEach((item, index) => {
+            item.classList.toggle('active', index === this.index.active);
+        });
+    }
+
+    changeSlide(index) {
+        super.changeSlide(index);
+        this.updateControlActiveClass(); // Atualiza a classe ativa ao mudar o slide
+    }
+
+
+
 }
