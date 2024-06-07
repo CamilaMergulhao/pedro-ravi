@@ -88,8 +88,6 @@ cursor: pointer;
 background-color: var(--color-brand); /* Cor do novo conteúdo quando ativo */
 }
 
-
-
 /* place-ctn */
 #place-wrapper{
 overflow: hidden;
