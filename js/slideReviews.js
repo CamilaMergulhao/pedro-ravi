@@ -2,34 +2,59 @@ export default function slideReviews() {
     const slideReviews = document.getElementById('reviews-box');
     const btnPrev = document.getElementById('btn-reviews-prev');
     const btnNext = document.getElementById('btn-reviews-next');
-    let currentIndex = 0;
+    let indiceAtual = 0;
+    let touchStartX = 0;
+    let touchMoveX = 0;
 
-    function updateSlidePosition() {
-        const slideWidth = slideReviews.children[0].offsetWidth + 80; // Width of slide + margin
-        const containerWidth = document.getElementById('reviews-wrapper').offsetWidth;
-        const maxScrollPosition = (slideReviews.children.length * slideWidth) - containerWidth;
+    // Definindo uma sensibilidade menor para o toque
+    const sensibilidadeToque = 100;
 
-        const newTransform = Math.min(currentIndex * slideWidth, maxScrollPosition);
-        slideReviews.style.transform = `translateX(-${newTransform}px)`;
+    function atualizarPosicaoSlide() {
+        const larguraSlide = slideReviews.children[0].offsetWidth + 80; // Largura do slide + margem
+        const larguraContainer = document.getElementById('reviews-wrapper').offsetWidth;
+        const posicaoMaximaScroll = (slideReviews.children.length * larguraSlide) - larguraContainer;
+
+        const novoTransform = Math.min(indiceAtual * larguraSlide, posicaoMaximaScroll);
+        slideReviews.style.transform = `translateX(-${novoTransform}px)`;
     }
 
-    function movePrev() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlidePosition();
+    function moverAnterior() {
+        if (indiceAtual > 0) {
+            indiceAtual--;
+            atualizarPosicaoSlide();
         }
     }
 
-    function moveNext() {
-        if (currentIndex < slideReviews.children.length - 1) {
-            currentIndex++;
-            updateSlidePosition();
+    function moverProximo() {
+        if (indiceAtual < slideReviews.children.length - 1) {
+            indiceAtual++;
+            atualizarPosicaoSlide();
         }
     }
 
-    btnPrev.addEventListener('click', movePrev);
-    btnNext.addEventListener('click', moveNext);
+    btnPrev.addEventListener('click', moverAnterior);
+    btnNext.addEventListener('click', moverProximo);
 
-    // Ensure the first item is correctly positioned
-    updateSlidePosition();
+    // Inicializa a posição do slide
+    atualizarPosicaoSlide();
+
+    // Suporte a toque (swipe)
+    slideReviews.addEventListener('touchstart', function(e) {
+        touchStartX = e.touches[0].clientX;
+    });
+
+    slideReviews.addEventListener('touchmove', function(e) {
+        touchMoveX = e.touches[0].clientX;
+        const diffX = touchStartX - touchMoveX;
+        if (Math.abs(diffX) > sensibilidadeToque) { // Utilizando a sensibilidade definida
+            if (diffX > 0) {
+                moverProximo();
+            } else {
+                moverAnterior();
+            }
+            touchStartX = touchMoveX;
+        }
+    });
 }
+
+slideReviews();

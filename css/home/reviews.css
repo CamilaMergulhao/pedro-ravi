@@ -21,8 +21,7 @@ overflow: hidden;
 #reviews-box{
 display: flex;
 margin: 15px 0px;
-transition: transform 0.5s ease-in-out;
-/* justify-content: center; */
+transition: transform 0.3s ease-in-out;
 }
 
 .reviews-infos-ctn:first-child {
@@ -63,8 +62,7 @@ padding: 30px;
 
 .reviews-btn-controls{
 display: flex;
-justify-content: space-between;
-align-items: center;
+justify-content: end;
 }
 
 .btn-reviews-box{
