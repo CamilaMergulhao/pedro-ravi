@@ -1,0 +1,8 @@
+.footer-user-area{
+background-color: var(--color-1);
+padding: 20px 0px;
+}
+
+.footer-user-area p{
+text-align: center;
+}

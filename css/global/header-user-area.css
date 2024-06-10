@@ -1,0 +1,25 @@
+.header-area-user{
+padding: 15px 0px;
+z-index: 1;
+background-color: var(--color-1);
+}
+
+.header-nav-area-user {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo-header{
+width: 180px;
+height: auto;
+}
+
+.header-area-user-menu{
+display: flex;
+gap: 15px;
+font: var(--font-14);
+letter-spacing: 1px;
+color: var(--color-0);
+text-transform: uppercase;
+}

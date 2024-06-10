@@ -1,3 +1,18 @@
+html{
+position: relative;
+min-height: 100%;
+/* Coloquei essa configuração no html, por conta
+do footer no index "espaço em branco"*/
+}
+
+
+#body-loginForm{
+margin: 0;
+/* padding-bottom: 60px;  */
+/* criei esse id no body especifico para o index, por conta do footer que fica com espaço em branco em baixo */
+}
+
+
 body{
 margin: 0px;
 font-family: Arial, Helvetica, sans-serif;

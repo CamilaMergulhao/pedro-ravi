@@ -21,6 +21,13 @@ color: var(--color-0);
 line-height: 1;
 }
 
+.title-32-brand{
+font: var(--font-32);
+text-transform: uppercase;
+color: var(--color-brand);
+line-height: 1;
+}
+
 
 
 
