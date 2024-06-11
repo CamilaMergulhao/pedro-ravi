@@ -1,0 +1,141 @@
+.calendar-bg{
+background-color: var(--gray-6);
+
+
+}
+
+.calendar{
+padding: 80px 0px;
+
+}
+
+
+/* calendario-ctn */
+.calendar-ctn{
+max-width: 900px;
+margin: auto;
+margin-top: 40px;
+}
+
+.calendar-ctn h2{
+margin-bottom: 10px;
+}
+
+
+/* calendario */
+.calendar-box{
+margin-bottom: 10px;
+}
+
+.calendar-days-title{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: var(--color-1);
+border-radius: var(--radius-25);
+padding: 25px 30px;
+cursor: pointer;
+}
+
+
+
+/* calendar-days */
+.calender-days{
+display: grid;
+grid-template-columns: 1fr auto;
+}
+
+.calendar-days-date{
+margin-right: 20px;
+}
+
+.calendar-days-city{
+display: block;
+}
+
+
+/* arrow-accordin */
+.arrow-accordion{
+background-color: var(--color-brand);
+border-radius: 100%;
+height: 35px;
+width: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+}
+
+.arrow-accordion img{
+width: 12px;
+}
+
+
+/* calendar-infos */
+.calendar-infos{
+background-color: var(--color-1);
+padding: 20px ;
+border-bottom-left-radius: var(--radius-25);
+border-bottom-right-radius: var(--radius-25);
+padding-left: 90px; /* Adicione o padding necessário para alinhar */
+}
+
+
+/* calendar-infos-place */
+
+.calendar-infos-place{
+margin-bottom: 30px;
+}
+
+.calendar-infos-place h4{
+font-weight: 600;
+margin-bottom: 5px;
+}
+
+/* calendar-infos-links */
+.calendar-infos-links{
+max-width: max-content;
+margin-bottom: 10px;
+}
+
+.calendar-infos-links a:first-child {
+margin-right: 5px;
+}
+
+
+/* javascript title */
+[data-accordion="js-accordion"] .calendar-days-title.ativo .arrow-accordion{
+transform: rotate(-180deg);
+transition: .3s;
+}
+
+[data-accordion="js-accordion"] .calendar-days-title.ativo{
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom: 1px solid var(--gray-6);
+}
+    
+
+/* javascript texto*/
+[data-accordion="js-accordion"] .calendar-infos{
+display: none;
+}
+
+[data-accordion="js-accordion"] .calendar-infos.ativo{
+display: block;
+animation: animacao .3s forwards;
+}
+
+
+@keyframes animacao{
+    from{
+        /* opacity: 0; */
+        transform: translate3d(0, -30px, 0);
+    }
+
+
+   to{
+        /* opacity: 1; */
+        transform: translate3d(0, 0px, 0);
+    }
+}
