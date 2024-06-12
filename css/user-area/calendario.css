@@ -1,14 +1,10 @@
 .calendar-bg{
 background-color: var(--gray-6);
-
-
 }
 
 .calendar{
 padding: 80px 0px;
-
 }
-
 
 /* calendario-ctn */
 .calendar-ctn{
@@ -20,7 +16,6 @@ margin-top: 40px;
 .calendar-ctn h2{
 margin-bottom: 10px;
 }
-
 
 /* calendario */
 .calendar-box{
@@ -70,7 +65,6 @@ box-sizing: border-box;
 width: 12px;
 }
 
-
 /* calendar-infos */
 .calendar-infos{
 background-color: var(--color-1);
@@ -80,9 +74,7 @@ border-bottom-right-radius: var(--radius-25);
 padding-left: 90px; /* Adicione o padding necessário para alinhar */
 }
 
-
 /* calendar-infos-place */
-
 .calendar-infos-place{
 margin-bottom: 30px;
 }

@@ -1,14 +1,19 @@
 import {SlideUm, SlideNav} from "./slide.js";
 import slideReviews from "./slideReviews.js";
 import calendarAccordion from './calendarAccordion.js';
+import trainingAccordion from "./trainingAccordion.js";
 
-const slide = new SlideNav('place-box', 'place-wrapper');
-
+// const slide = new SlideNav('place-box', 'place-wrapper');
 
 calendarAccordion();
-slide.init();
+trainingAccordion();
 
-slide.addArrow('.prev', '.next');
-slideReviews();
+
+
+
+// slide.init();
+
+// slide.addArrow('.prev', '.next');
+// slideReviews();
 
 

@@ -1,8 +1,8 @@
 export default function calendarAccordion(){
 
-    const titleAccordion = document.querySelectorAll('[data-accordion="js-accordion"],.calendar-days-title')
-        console.log('olá')
-
+    const titleAccordion = document.querySelectorAll('[data-accordion="js-accordion"],.calendar-days-title');
+       console.log('ola')
+    
         if(titleAccordion.length){
         
         function listClick(){
@@ -20,8 +20,6 @@ export default function calendarAccordion(){
         
         
       titleAccordion.forEach((item) => {
-        
-      
             item.addEventListener('click', listClick);
         });
     }

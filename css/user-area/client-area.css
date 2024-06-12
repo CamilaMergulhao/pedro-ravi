@@ -1,0 +1,83 @@
+.training-panel-bg{
+background-color: var(--gray-6);
+height: 100vh;
+padding: 80px 0px;
+}
+
+
+/* training-title */
+.training-title {
+display: flex;
+justify-content: space-between;
+align-items: start;
+}
+
+.training-title-level{
+text-align: right;
+}
+
+
+.training-today-title-box{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: var(--color-1);
+border-radius: var(--radius-25);
+padding: 25px 30px;
+cursor: pointer;
+}
+
+
+.training-today-infos{
+background-color: var(--color-1);
+margin: 0px;
+box-sizing: border-box;
+padding: 25px 30px;
+border-bottom-left-radius: var(--radius-25);
+border-bottom-right-radius: var(--radius-25);
+}
+
+
+.training-today-infos-list{
+list-style-position: inside;
+padding-left: 25px;
+}
+
+.training-today-infos-list li{
+list-style: decimal;
+margin-bottom: 20px;
+}
+
+
+
+
+/* javascript title */
+.training-today-title-box.ativoUser .arrow-accordion {
+transform: rotate(-180deg);
+transition: .3s;
+}
+
+.training-today-title-box.ativoUser {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 1px solid var(--gray-6);
+}
+
+.training-today-infos {
+    display: none;
+}
+
+.training-today-infos.ativoUser {
+    display: block;
+    animation: animacao .3s forwards;
+}
+
+@keyframes animacao {
+    from {
+        transform: translate3d(0, -30px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0px, 0);
+    }
+}
