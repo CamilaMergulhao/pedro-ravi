@@ -3,7 +3,7 @@ export default function trainingAccordion(){
     const trainingInfos = document.querySelector(".training-today-infos");
     const arrowAccordion = document.querySelector(".arrow-accordion");
 
-    console.log(titleAccordionUser)
+ 
 
     function listClickUser(){
         trainingInfos.classList.toggle('ativoUser');
@@ -12,4 +12,6 @@ export default function trainingAccordion(){
     }
         
     titleAccordionUser.addEventListener('click', listClickUser);
+
+
 }

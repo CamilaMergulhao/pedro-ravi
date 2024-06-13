@@ -1,0 +1,53 @@
+/* progress-week */
+.progress-week{
+padding: 40px 0px;
+}
+
+
+/* progress-week-box */
+.progress-week-box{
+background-color: var(--color-1);
+border-radius: var(--radius-25);
+padding: 25px 30px;
+}
+
+/* progress-week-title */
+.progress-week-title{
+display: flex;
+justify-content: space-between;
+margin-bottom: 30px;
+}
+
+/* progress-list */
+.progress-list{
+display: flex;
+justify-content: center;
+gap: 70px;
+padding: 30px;
+}
+
+.progress-list li{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.progress-ok{
+height: 45px;
+width: 45px;
+background-color: var(--gray-2);
+border: 1px solid var(--color-brand);
+border-radius: 100%;
+margin-bottom: 10px;
+cursor: pointer;
+}
+
+.pogress-day{
+text-align: center;
+font: var(--font-16);
+}
+
+.pogress-day span{
+display: block;
+/* margin-bottom: 5px; */
+}
