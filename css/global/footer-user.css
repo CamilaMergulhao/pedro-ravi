@@ -1,8 +1,31 @@
-.footer-user-area{
+.footer-user-area-bg{
 background-color: var(--color-1);
 padding: 20px 0px;
 }
 
+
+.footer-user-area{
+border-top: 1px solid var(--gray-6);
+}
+
+.footer-user-area-ctn{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
 .footer-user-area p{
 text-align: center;
+}
+
+.footer-user-area-social{
+display: flex;
+gap: 10px;
+}
+
+.footer-user-area-social li a img{
+height: 18px;
+width: auto;
 }
