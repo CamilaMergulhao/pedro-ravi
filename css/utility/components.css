@@ -51,6 +51,11 @@ cursor: pointer;
 box-shadow: none;
 }
 
+#btn-register.btn-registrar-ativo{
+background-color: var(--color-brand);
+color: var(--color-1);
+}
+
 
 .hr-footer-vertical {
 border: none; 

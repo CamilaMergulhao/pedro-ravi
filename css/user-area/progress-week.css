@@ -32,7 +32,7 @@ flex-direction: column;
 align-items: center;
 }
 
-.progress-ok{
+.progress{
 height: 45px;
 width: 45px;
 background-color: var(--gray-2);
@@ -41,6 +41,14 @@ border-radius: 100%;
 margin-bottom: 10px;
 cursor: pointer;
 }
+
+.progress img{
+display: none;
+}
+
+
+
+
 
 .pogress-day{
 text-align: center;
@@ -51,3 +59,18 @@ font: var(--font-16);
 display: block;
 /* margin-bottom: 5px; */
 }
+
+
+/* progress javascript */
+
+.progress.ok{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--color-brand);
+}
+
+.progress.ok img{
+display: block;
+}
+
