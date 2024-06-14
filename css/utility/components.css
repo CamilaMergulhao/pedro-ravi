@@ -57,6 +57,38 @@ color: var(--color-1);
 }
 
 
+
+/* btn confirm & cancel register */
+#registerConfirm{
+display: inline-block;
+border-radius: var(--radius-25);
+background-color: var(--color-brand);
+color: var(--color-1);
+padding: 10px 30px;
+font: 700 1.125rem  'LT Eyesight', sans-serif;
+text-transform: uppercase;
+letter-spacing: 1px;
+cursor: pointer;
+box-shadow: none;
+}
+
+#registerCancel{
+display: inline-block;
+border-radius: var(--radius-25);
+border: 1px solid var(--color-brand);
+background-color: transparent;
+color: var(--color-0);
+padding: 10px 30px;
+font: 700 1.125rem  'LT Eyesight', sans-serif;
+text-transform: uppercase;
+letter-spacing: 1px;
+cursor: pointer;
+box-shadow: none;
+}
+
+
+
+
 .hr-footer-vertical {
 border: none; 
 border-left: 1px solid var(--color-brand); 

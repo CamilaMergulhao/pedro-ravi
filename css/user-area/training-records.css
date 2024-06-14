@@ -19,14 +19,13 @@ border-bottom-left-radius: var(--radius-25);
 border-bottom-right-radius: var(--radius-25);
 }
 
-.training-records-week{
-display: flex;
-justify-content: space-between;
-background-color: var(--gray-5);
-border-radius: var(--radius-10);
-max-width: 800px;
-padding: 15px 20px;
-margin: auto;
+
+/* .training-records-week{
+display: none;
+} */
+
+.training-records-week:last-child{
+margin-bottom: 0px;
 }
 
 
@@ -50,4 +49,65 @@ display: none;
 display: block;
 animation: animacao .3s forwards;
 }
+
+
+/* javascript */
+/* .training-records-week.registerAtivo{
+display: flex;
+justify-content: space-between;
+background-color: var(--gray-5);
+border-radius: var(--radius-10);
+max-width: 800px;
+padding: 15px 20px;
+margin: auto;
+margin-bottom: 10px;
+} */
+
+.training-records-week{
+display: flex;
+justify-content: space-between;
+background-color: var(--gray-5);
+border-radius: var(--radius-10);
+max-width: 800px;
+padding: 15px 20px;
+margin: auto;
+margin-bottom: 10px;
+}
+
+
+
+
+/* modal */
+.modal-week-ctn{
+display: none;
+}
+
+.modal-week-ctn.registerShow{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+position: fixed;
+background-color: rgba(103, 103, 103, 0.302);
+top: 0;
+left: 0;
+z-index: 100;
+}
+
+.modal-week{
+width: 300px;
+height: 200px;
+background-color: var(--color-1);
+border-radius: var(--radius-10);
+z-index: 150;
+text-align: center;
+padding: 30px;
+}
+
+.modal-week h2{
+margin-bottom: 20px;
+}
+
+
 
