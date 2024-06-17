@@ -5,17 +5,28 @@ import trainingAccordion from "./trainingAccordion.js";
 import recordsWeek from "./recordsWeek.js";
 import progressOk from "./progressOk.js";
 import registrerProgress from "./registrerProgress.js";
+import slideVideoClasses from "./slideVideo.js";
 
-const slide = new SlideNav('place-box', 'place-wrapper');
 
+
+slideVideoClasses();
+slideReviews();
 registrerProgress();
 progressOk();
 recordsWeek();
 calendarAccordion();
 trainingAccordion();
 
+
+
+const slide = new SlideNav('place-box', 'place-wrapper');
 slide.init();
 slide.addArrow('.prev', '.next');
-slideReviews();
+
+
+
+
+
+
 
 

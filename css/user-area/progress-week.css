@@ -1,6 +1,6 @@
 /* progress-week */
 .progress-week{
-padding: 40px 0px;
+padding: 30px 0px;
 }
 
 
@@ -46,10 +46,6 @@ cursor: pointer;
 display: none;
 }
 
-
-
-
-
 .pogress-day{
 text-align: center;
 font: var(--font-16);
@@ -59,6 +55,22 @@ font: var(--font-16);
 display: block;
 /* margin-bottom: 5px; */
 }
+
+
+.register-box{
+display: flex;
+align-items: center;
+}
+
+.register-box span{
+display: none;
+margin-right: 10px;
+}
+
+.register-box span.msgcomplete{
+display: block;
+}
+
 
 
 /* progress javascript */
